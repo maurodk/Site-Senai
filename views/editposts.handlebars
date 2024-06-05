@@ -1,0 +1,16 @@
+<h1>EDITAR POST</h1>
+<hr>
+<div class="container">
+    <form action="/edit" method="POST">
+    <input type="hidden" name="id" value="{{post.id}}">
+     <p>NOME</p>
+     <input type="text" name="nome" value="{{post.nome}}">
+     <p>CONTEUDO</p>
+     <input type="text" name="conteudo" value="{{post.conteudo}}">
+    <button class="mt-3 btn btn-success" type="submit">SALVAR</button>       
+    
+    </form>
+
+
+
+</div>

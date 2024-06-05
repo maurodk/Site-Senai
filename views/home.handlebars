@@ -1,0 +1,13 @@
+<h1>MEU POSTS ESTÃO AQUI</h1>
+<a href="/cadastro"><button class="post-button">CRIAR POST</button></a>
+
+{{#each posts}}
+
+<small>{{createAt}}</small>
+<h1>{{titulo}}</h1>
+<p>{{conteudo}}</p>
+<a href="/deletar/{{id}}"><button class="btn btn-danger">DELETAR</button></a>
+<a href="/edit/{{id}}"><button class="btn btn-success">EDITAR</button></a>
+<hr>
+
+{{/each}}
